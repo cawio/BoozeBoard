@@ -1,0 +1,7 @@
+<mat-grid-list [cols]="dimensions().width" [rowHeight]="'2:1'" [gutterSize]="'2rem'">
+    @for (tile of tiles(); track tile.id) {
+        <mat-grid-tile [@spin]="tile.isSpun" (click)="onTileClick(tile)">
+            <app-card [tile]="tile"></app-card>
+        </mat-grid-tile>
+    }
+</mat-grid-list>

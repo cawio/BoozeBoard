@@ -1,0 +1,10 @@
+<mat-toolbar color="accent">
+    <h1>{{ title }}</h1>
+    <span class="spacer"></span>
+    <button
+        mat-icon-button
+        (click)="onToggleThemeButtonClick()"
+    >
+        <mat-icon>{{ darkThemeEnabled() ? 'dark_mode' : 'light_mode' }}</mat-icon>
+    </button>
+</mat-toolbar>

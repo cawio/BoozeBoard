@@ -1,0 +1,9 @@
+<mat-card>
+    <mat-card-content>
+        @if (tile?.isSpun) {
+            {{ tile?.drink ? '🍻' : '⛔'}}
+        } @else {
+            ?
+        }
+    </mat-card-content>
+</mat-card>

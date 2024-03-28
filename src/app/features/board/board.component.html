@@ -1,0 +1,8 @@
+<mat-tab-group color="accent" (selectedTabChange)="onTabChange($event)">
+    @for (tab of tabs; track $index) {
+        <mat-tab [label]="tab.label">
+            <app-game-grid></app-game-grid>
+        </mat-tab>
+
+    }
+</mat-tab-group>
